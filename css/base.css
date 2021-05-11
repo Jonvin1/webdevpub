@@ -50,18 +50,13 @@ ul {
     grid-template-rows: auto;
     grid-template-areas: 
         ". windows android ."
-        ". windows linux ."
-        ". ios linux .";
+        ". windows linux .";
     row-gap: 20px;
     padding-bottom: 50px;
 }
 
 @media screen and (min-aspect-ratio: 10/8) {
     #downloads {
-        grid-template-columns: auto auto auto;
-        grid-template-areas: 
-            "windows android ios"
-            "windows linux .";
         margin-left: 15vw;
         margin-right: 15vw;
     }

@@ -1,0 +1,1 @@
+document.getElementById("bildspel").src = "recources/TeknikProjectSketch.png"
