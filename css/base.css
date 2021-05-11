@@ -6,30 +6,33 @@ body {
 .Rubric {
     padding-top: 120px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #intro {
     background-color: rgb(50,50,50);
     text-align: center;
-    width: 50vw;
+    width: 400px;
     padding: 10px;
     border-radius: 10px;
+    margin: 25px;
 }
 
 #Highway_Run_icon {
     background-color: rgb(50,50,50);
-    width: 25vw;
+    width: 200px;
     padding: 25px;
     border-radius: 30%;
+    margin: 25px;
 }
 
 .text {
     background-color: rgb(50,50,50);
     padding: 25px;
     margin: 55px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10vw;
+    margin-right: 10vw;
     text-align: center;
     text-overflow: clip;
     border-radius: 10px;
@@ -42,7 +45,6 @@ ul {
 }
 
 #downloads {
-    
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
@@ -51,8 +53,22 @@ ul {
         ". windows linux ."
         ". ios linux .";
     row-gap: 20px;
+    padding-bottom: 50px;
 }
 
-@media screen and (min-aspect-ratio: 10/9) {
-    
+@media screen and (min-aspect-ratio: 10/8) {
+    #downloads {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+            "windows android ios"
+            "windows linux .";
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+@media screen and (min-aspect-ratio: 10/6) {
+    #downloads {
+        margin-right: 25vw;
+        margin-left: 25vw;
+    }
 }
