@@ -55,6 +55,22 @@ ul {
     padding-bottom: 50px;
 }
 
+#btnPrev{
+    border-radius: 50%;
+}
+#btnNext{
+    border-radius: 50%;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border-width: 0px;
+}
+button:hover{
+    background-color:rgba(0, 0, 0, .5);
+    
+}
+
 @media screen and (min-aspect-ratio: 10/8) {
     #downloads {
         margin-left: 15vw;

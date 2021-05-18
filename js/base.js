@@ -1,4 +1,4 @@
-let pictures = ["recources/wolf-5120x2560-forest-nightmare-hd-5k-16854.jpg", "recources/TeknikProjectSketch.png", "recources/Highway_Run_icon.png"]
+let pictures = ["recources/bild1.png", "recources/bild2.png", "recources/bild3.png", "recources/bild4.png"]
 let i = 0;
 document.getElementById("btnNext").addEventListener("click", nextImg)
 document.getElementById("btnPrev").addEventListener("click", prevImg)
