@@ -55,31 +55,66 @@ ul {
     padding-bottom: 50px;
 }
 
-#btnPrev{
-    border-radius: 50%;
+#slideShow {
+    display: grid;
+    grid-template-areas: 
+    "img img img img"
+    ". btnPrev btnNext .";
+    justify-content: center;
 }
-#btnNext{
-    border-radius: 50%;
+
+#img {
+    width: 70vw;
+    grid-area: img;
 }
+
+.imgBtn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
 button{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, .1);
     color: white;
     border-width: 0px;
+    padding: 10px;
 }
 button:hover{
-    background-color:rgba(0, 0, 0, .5);
+    background-color:rgba(0, 0, 0, .3);
     
 }
 
+.webgl-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px;
+    background-color: rgb(50,50,50);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+
+
 @media screen and (min-aspect-ratio: 10/8) {
-    #downloads {
+    .text {
         margin-left: 15vw;
         margin-right: 15vw;
     }
+    #img {
+        width: 60vw;
+    }
 }
 @media screen and (min-aspect-ratio: 10/6) {
-    #downloads {
+    .text {
         margin-right: 25vw;
         margin-left: 25vw;
+    }
+    #img {
+        width: 45vw;
     }
 }
