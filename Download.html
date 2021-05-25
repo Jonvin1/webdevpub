@@ -6,7 +6,6 @@
     </link>
     <link rel="stylesheet" href="css/navbar.css">
     </link>
-    <script src="js/base.js"></script>
     <script src="js/navbar.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,7 +22,7 @@
         </div>
     </div>
 
-    <div class="text" id="downloads"data-aos="fade-up">
+    <div class="text" id="downloads" data-aos="fade-up">
 
         <div style="grid-area:windows;">
             <h2>Windows</h2>
@@ -41,10 +40,11 @@
                 <button>Download .apk</button></a>
         </div>
     </div>
-    
+
     <div class="text" data-aos="fade-right">
         <h2>Update Log</h2>
-        <h3>v1.1</h3>
+        <button type="button" class="collapsible">v1.1</button>
+        <div class="content">
             <ul>
                 <li>Added support for android</li>
                 <li>The game now supports tuch controls</li>
@@ -52,17 +52,20 @@
                 <li>Added ability to save and load highscores</li>
                 <li>Added separate highscores for each difficulty</li>
             </ul>
-        <h3>v1.0</h3>
+        </div>
+        <button type="button" class="collapsible">v1.0</button>
+        <div class="content">
             <ul>
                 <li>First release</li>
             </ul>
+        </div>
     </div>
 
 
     <script>
         AOS.init();
-      </script>
-
+    </script>
+    <script src="js/Download.js"></script>
 
 </body>
 
