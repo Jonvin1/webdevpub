@@ -31,8 +31,8 @@ body {
     background-color: rgb(50,50,50);
     padding: 25px;
     margin: 55px;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     text-align: center;
     text-overflow: clip;
     border-radius: 10px;
@@ -64,7 +64,7 @@ ul {
 }
 
 #img {
-    width: 45vw;
+    width: 70vw;
     grid-area: img;
 }
 
@@ -126,12 +126,21 @@ button:hover{
     background: rgb(70, 70, 70);
 }
 
-/* 
-    From https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-    
+@media screen and (min-aspect-ratio: 10/8) {
+    .text {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    #img {
+        width: 60vw;
+    }
+}
+@media screen and (min-aspect-ratio: 10/6) {
+    .text {
+        margin-right: 25vw;
+        margin-left: 25vw;
+    }
+    #img {
+        width: 45vw;
+    }
 }

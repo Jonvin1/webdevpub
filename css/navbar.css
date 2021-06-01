@@ -32,15 +32,3 @@ body {
     background-color: rgb(0, 0, 100);
     color: white;
 }
-
-/* 
-    From https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .navbar a {
-        font-size: 40px;
-    }
-}
