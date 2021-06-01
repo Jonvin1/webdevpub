@@ -18,6 +18,7 @@ function addNavBar() {
         let element = document.createElement("a");
         element.textContent = key;
         element.href = value;
+        element.id = key;
 
         let path = location.pathname;
 
