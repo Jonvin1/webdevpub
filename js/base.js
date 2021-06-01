@@ -2,16 +2,16 @@ let pictures = ["recources/bild1.png", "recources/bild2.png", "recources/bild3.p
 let i = 0;
 document.getElementById("btnNext").addEventListener("click", nextImg)
 document.getElementById("btnPrev").addEventListener("click", prevImg)
-document.getElementById("img").src = pictures[0];
+let imgSrc = document.getElementById("img").src = pictures[0];
 
 function slideShow() {
     i++
     if (i < pictures.length) {
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
         setTimeout(slideShow, 3000);
     } else {
         i = 0;
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
         setTimeout(slideShow, 3000);
     }
 }
@@ -19,19 +19,19 @@ function slideShow() {
 function nextImg(){
     i++;
     if (i < pictures.length) {
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
     } else {
         i = 0;
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
     }
 }
 function prevImg(){
     i--;
     if(i > -1){
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
     } else{
         i = pictures.length - 1;
-        document.getElementById("img").src = pictures[i];
+        imgSrc = pictures[i];
     }
 }
 
