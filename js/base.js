@@ -1,4 +1,4 @@
-let pictures = ["recources/bild1.png", "recources/bild2.png", "recources/bild3.png", "recources/bild4.png"]
+let pictures = ["resources/bild1.png", "resources/bild2.png", "resources/bild3.png", "resources/bild4.png"]
 let i = 0;
 document.getElementById("btnNext").addEventListener("click", nextImg)
 document.getElementById("btnPrev").addEventListener("click", prevImg)
